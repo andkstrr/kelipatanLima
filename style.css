@@ -1,0 +1,107 @@
+    /* Styling Input */
+    
+    body {
+        font-family: Montserrat;
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('assets/Amikado.gif'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+    .input {
+        color: white;
+        text-shadow: -3px  3px 10px rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(2px);
+        margin: auto;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.7), 0px 10px 20px rgba(0,0,0,0.5), 0px 30px 60px 1px rgba(0,0,0,0.9);
+        border-radius: 8px;
+        padding: 130px;
+    }
+    .input .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -35px;
+        margin-bottom: 10px;
+    }
+    .input .head .title {
+        font-size: 2.2em;
+    }
+    .input .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .input .form input[type="number"] {
+        font-family: Montserrat;
+        border-radius: 12px;
+        height: 60px;
+        width: 500px;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        border: 3px solid #556B2F; 
+        transition: border-color 0.3s ease; 
+    }
+    .input .form input[type="number"]:focus {
+        border-color: #BDB76B; 
+    }
+    .input .form .btn-input {
+        font-family: Montserrat;
+        font-size: 16px;
+        background: #556B2F;
+        text-decoration: none;
+        color: white;
+        border-radius: 3px;
+        padding: 5px 2em;
+        transition: 0.5s;
+        height: 50px;
+        width: 500px;
+    }
+    .input .form .btn-input:hover {
+        background: white;
+        color: dimgray;
+        background-color: #BDB76B;
+        transition: 0.5s;
+    }
+    footer {
+        position: absolute; 
+        bottom: 0; 
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.2); 
+        text-align: center; 
+        padding: 10px 0; 
+        color: white; 
+        margin-bottom: 20px;
+    }
+
+    /* Responsiveness Input */
+    @media only screen and (min-width: 768px) {
+        .input {
+            padding: 100px; 
+        }
+        .input .form input[type="number"] {
+            width: 400px; 
+        }
+        .input .form .btn-input {
+            width: 400px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .input {
+            padding: 20px; 
+        }
+        .input .form input[type="number"] {
+            width: 300px; 
+        }
+        .input .form .btn-input {
+            width: 300px; 
+        }
+    }
